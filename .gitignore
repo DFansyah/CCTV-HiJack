@@ -1,0 +1,5 @@
+.gitattributes
+*.jpg
+node_modules
+*.bak
+yarn.lock

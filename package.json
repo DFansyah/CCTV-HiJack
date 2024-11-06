@@ -1,0 +1,22 @@
+{
+    "name": "CCTV-HiJack",
+    "description": "CCTV HiJacking, you can choose the countries and input the country code",
+    "main": "index.js",
+    "type": "commonjs",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "keywords": [
+        "CCTV-HiJack",
+        "CCTV-HiJacking",
+        "CCTV"
+    ],
+    "license": "MIT",
+    "depedencies": {
+        "axios": "^1.6.0",
+        "fs": "0.0.1-security",
+        "path": "^0.12.7",
+        "readline": "^1.3.0"
+    },
+    "author": "DFansyah"
+}
