@@ -28,7 +28,7 @@ const displayCountryCodes = async (headers) => {
         console.log("Available Country Codes:")
         console.log("──────────────────────────────────────────────────────────")
 
-        for (let i = 0 i < countries.length i += 2) {
+        for (let i = 0; i < countries.length; i += 2) {
             const [code1, info1] = countries[i]
             const country1 = `(${code1}) - ${info1.country} (Cameras: ${info1.count})`
 
@@ -64,7 +64,7 @@ const hijackCameras = async (headers, countryCode) => {
         const findIpRegex = /http:\/\/\d+\.\d+\.\d+\.\d+:\d+/g
         const ips = []
 
-        for (let page = 1 page <= lastPage page++) {
+        for (let page = 1; page <= lastPage; page++) {
             res = await axios.get(`http://www.insecam.org/en/bycountry/${countryCode}/?page=${page}`, { headers })
             const pageIps = res.data.match(findIpRegex)
             if (pageIps) {
